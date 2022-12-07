@@ -127,11 +127,10 @@
             district: "",
             county: "",
             verifycode: "",
-            type:"",
+            type: "",
             infoIndex: 0 // 0=關閉
         },
-        created() {
-        },
+        created() {},
         methods: {
             showPopup: function(tag) {
                 $('.slider_popup').slick('slickGoTo', 0)
@@ -139,16 +138,16 @@
             },
             sendEmail: function() {
                 var self = this;
-                var tomail = "wendy198622@gmail.com" //信箱
+                var tomail = "a0903002048@gmail.com" //信箱
 
                 var subject = "我要預約明築輝皇看房" //信件主旨
                 var content = "姓名:" + self.name + "\n" +
                     "需求房型:" + self.type + "\n" +
                     "電話:" + self.phone + "\n" +
                     "區域:" + self.county + "-" + self.district + "\n" +
-                    "個人資料集聲明事項:" + (self.check ? "同意":"不同意") + "\n" +
+                    "個人資料集聲明事項:" + (self.check ? "同意" : "不同意") + "\n" +
                     "留言:" + self.message + "\n";
-                    
+
                 console.log(content)
 
                 if (!self.check) {
@@ -186,7 +185,6 @@
             }
         }
     })
-
 </script>
 
 </html>
